@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Networkzone</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://networkzone.site" />
+    <link rel="icon" type="image/png" href="/networkzone/favicon.png" />
+    
+    <script type="module" crossorigin src="/networkzone/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/networkzone/assets/header-13d5acae.js">
+    <link rel="modulepreload" crossorigin href="/networkzone/assets/vendor-08b4ef8f.js">
+    <link rel="stylesheet" href="/networkzone/assets/header-e526ac2e.css">
+    <link rel="stylesheet" href="/networkzone/assets/vendor-d9eb7f85.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <nav class="nav">
+      <a class="header-logo-link" href="./">
+        <img
+          class="header-logo-img"
+          src="data:image/png;base64,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"
+          alt="Logo"
+          width="57"
+          height="36"
+      /></a>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#home">Home</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#about">Story World</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gameplay"
+            >Gameplay Flow</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#systems"
+            >Emotional Systems</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gallery"
+            >Visual Atmosphere</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#faq">FAQ</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#contact">Contact</a>
+        </li>
+      </ul>
+      <button class="nav-btn" type="button" aria-label="Open mobile menu">
+        <svg class="menu-icon" width="40" height="40">
+          <use href="/networkzone/assets/sprite-ebf4c179.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button class="close-btn" type="button" aria-label="Close mobile menu">
+        <svg class="close-icon" width="40" height="40">
+          <use href="/networkzone/assets/sprite-ebf4c179.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+    <div class="context-menu">
+  <div class="container context-container">
+    <nav class="context-nav">
+      <ul class="context-nav-list">
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#home">Home</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#about">Story World</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#gameplay"
+            >Gameplay Flow</a
+          >
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#systems"
+            >Emotional Systems</a
+          >
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#gallery"
+            >Visual Atmosphere</a
+          >
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#faq">FAQ</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+    <main>
+      <section class="section hero-section" id="home">
+  <div class="hero-bg-wrapper">
+    <div class="container hero-container">
+      <div class="hero-content-wrapper">
+        <div class="hero-text-wrapper">
+          <div class="hero-line-wrapper">
+            <div class="hero-line"></div>
+            <svg class="hero-circle-icon" width="30" height="10">
+              <use href="/networkzone/assets/sprite-ebf4c179.svg#icon-circles"></use>
+            </svg>
+            <div class="hero-line"></div>
+          </div>
+          <h1 class="hero-main-title">Every connection carries weight.</h1>
+          <p class="hero-subtitle">
+            Shape relationships through choice, balance, and care.
+          </p>
+          <div class="hero-bottom-wrapper">
+            <picture>
+              <source
+                srcset="/networkzone/assets/hero-img-desk-042daa29.png "
+                media="(min-width: 1440px)"
+                width="115"
+                height="115" />
+              <source
+                srcset="/networkzone/assets/hero-img-mob-a6278923.png "
+                width="80"
+                height="80" />
+              <img
+                class="hero-img"
+                src="/networkzone/assets/hero-img-mob-a6278923.png"
+                alt="Screenshot of the game"
+                width="80"
+                height="80"
+                loading="lazy"
+            /></picture>
+            <div class="hero-bottom-text-wrapper">
+              <p class="hero-bottom-title">Core Experience</p>
+              <ul class="hero-bottom-list">
+                <li class="hero-bottom-item">
+                  <p class="hero-bottom-item-text">Emotional</p>
+                </li>
+                <li class="hero-bottom-item">
+                  <p class="hero-bottom-item-text">Narrative Choices</p>
+                </li>
+                <li class="hero-bottom-item">
+                  <p class="hero-bottom-item-text">Relationship</p>
+                </li>
+                <li class="hero-bottom-item">
+                  <p class="hero-bottom-item-text">Meaningful Consequences</p>
+                </li>
+                <li class="hero-bottom-item">
+                  <p class="hero-bottom-item-text">Atmospheric World</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <picture>
+      <source
+        srcset="/networkzone/assets/hero-line-desk-a1a54631.png "
+        media="(min-width: 1440px)"
+        width="1440"
+        height="46" />
+      <source srcset="/networkzone/assets/hero-line-mob-68e4c8b5.png " width="375" height="18" />
+      <img
+        class="hero-line-img"
+        src="/networkzone/assets/hero-line-mob-68e4c8b5.png"
+        alt="Line"
+        width="375"
+        height="18"
+    /></picture>
+  </div>
+</section>
+
+      <section class="section about-section" id="about">
+  <div class="about-bg-wrapper">
+    <div class="container about-container">
+      <div class="about-content-wrapper">
+        <svg class="about-logo-icon" width="57" height="36">
+          <use href="/networkzone/assets/sprite-ebf4c179.svg#icon-logo"></use>
+        </svg>
+        <h2 class="section-title about-title">Story World</h2>
+        <p class="section-subtitle about-subtitle">
+          Threadbound takes place in a symbolic world built from memories,
+          moments, and unfinished connections.
+        </p>
+        <p class="about-text">
+          Each area represents a different emotional state — trust, distance,
+          hope, conflict.
+        </p>
+        <p class="about-text about-bottom-text">
+          The world doesn’t explain itself directly. You understand it by
+          interacting with it.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section gameplay-section" id="gameplay">
+  <div class="gameplay-bg-wrapper">
+    <div class="container gameplay-container">
+      <div class="gameplay-content-wrapper">
+        <div class="section-title-wrapper gameplay-title-wrapper">
+          <h2 class="section-title gameplay-title">Gameplay Flow</h2>
+          <p class="section-subtitle gameplay-subtitle">
+            Progress happens when the system reaches harmony, not when
+            everything is “perfect.”
+          </p>
+          <p class="gameplay-text">
+            Players interact with threads rather than characters:
+          </p>
+        </div>
+        <div class="gameplay-list-wrapper">
+          <img
+            class="gameplay-img1"
+            src="/networkzone/assets/gameplay-img1-mob-ad1c62d2.png"
+            alt="Screenshot of the game"
+            width="336"
+            height="506"
+            loading="lazy"
+          />
+          <ul class="gameplay-list">
+            <li class="gameplay-list-item">
+              <picture>
+                <source
+                  srcset="/networkzone/assets/gameplay-img2-desk-c01ab6d4.png "
+                  media="(min-width: 1440px)"
+                  width="944"
+                  height="237" />
+                <source
+                  srcset="/networkzone/assets/gameplay-img2-mob-17fb451a.png "
+                  width="343"
+                  height="237" />
+                <img
+                  class="gameplay-img2"
+                  src="/networkzone/assets/gameplay-img2-mob-17fb451a.png"
+                  alt="Screenshot of the game"
+                  width="343"
+                  height="237"
+                  loading="lazy"
+              /></picture>
+            </li>
+            <li class="gameplay-list-item">
+              <picture>
+                <source
+                  srcset="/networkzone/assets/gameplay-img3-desk-18686b2a.png "
+                  media="(min-width: 1440px)"
+                  width="456"
+                  height="237" />
+                <source
+                  srcset="/networkzone/assets/gameplay-img3-mob-9ff1fcd5.png "
+                  width="343"
+                  height="237" />
+                <img
+                  class="gameplay-img3"
+                  src="/networkzone/assets/gameplay-img3-mob-9ff1fcd5.png"
+                  alt="Screenshot of the game"
+                  width="343"
+                  height="237"
+                  loading="lazy"
+              /></picture>
+            </li>
+            <li class="gameplay-list-item">
+              <picture>
+                <source
+                  srcset="/networkzone/assets/gameplay-img4-desk-ac58c074.png "
+                  media="(min-width: 1440px)"
+                  width="456"
+                  height="237" />
+                <source
+                  srcset="/networkzone/assets/gameplay-img4-mob-036bee2e.png "
+                  width="343"
+                  height="237" />
+                <img
+                  class="gameplay-img4"
+                  src="/networkzone/assets/gameplay-img4-mob-036bee2e.png"
+                  alt="Screenshot of the game"
+                  width="343"
+                  height="237"
+                  loading="lazy"
+              /></picture>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section systems-section" id="systems">
+  <div class="systems-bg-wrapper">
+    <div class="container systems-container">
+      <div class="systems-content-wrapper">
+        <h2 class="section-title">Emotional Systems</h2>
+        <p class="section-subtitle systems-subtitle">
+          There are no fail states — only outcomes that reflect how you chose to
+          act.
+        </p>
+        <ul class="systems-list">
+          <li class="systems-list-item">
+            <svg class="systems-icon" width="40" height="40">
+              <use href="/networkzone/assets/sprite-ebf4c179.svg#icon-debian"></use>
+            </svg>
+            <p class="systems-item-text">Tension and emotional release</p>
+          </li>
+          <li class="systems-list-item">
+            <svg class="systems-icon" width="40" height="40">
+              <use href="/networkzone/assets/sprite-ebf4c179.svg#icon-meteor"></use>
+            </svg>
+            <p class="systems-item-text">Distribution of emotional weight</p>
+          </li>
+          <li class="systems-list-item">
+            <svg class="systems-icon" width="40" height="40">
+              <use href="/networkzone/assets/sprite-ebf4c179.svg#icon-jquery"></use>
+            </svg>
+            <p class="systems-item-text">Small actions shape future outcomes</p>
+          </li>
+          <li class="systems-list-item">
+            <svg class="systems-icon" width="40" height="40">
+              <use href="/networkzone/assets/sprite-ebf4c179.svg#icon-graphql"></use>
+            </svg>
+            <p class="systems-item-text">Some changes cannot be undone</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="gallery-section section" id="gallery">
+  <div class="gallery-bg-wrapper">
+    <div class="container gallery-container">
+      <div class="gallery-content-wrapper">
+        <h2 class="section-title gallery-title">Visual Atmosphere</h2>
+        <p class="section-subtitle gallery-subtitle">
+          We wanted everything to feel delicate and meaningful, like it could
+          break if you're not careful.
+        </p>
+        <div class="gallery-swiper-container">
+          <ul class="swiper-wrapper gallery-swiper-wrapper">
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/networkzone/assets/gallery-img1-desk-9b90982f.png "
+                  media="(min-width: 1440px)"
+                  width="304"
+                  height="522" />
+                <source
+                  srcset="/networkzone/assets/gallery-img1-mob-01a811cb.png "
+                  width="343"
+                  height="520" />
+                <img
+                  class="gallery-img"
+                  src="/networkzone/assets/gallery-img1-mob-01a811cb.png"
+                  alt="Screenshot of the game"
+                  width="343"
+                  height="520"
+                  loading="lazy"
+              /></picture>
+            </li>
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/networkzone/assets/gallery-img2-desk-3bf07af7.png "
+                  media="(min-width: 1440px)"
+                  width="544"
+                  height="740" />
+                <source
+                  srcset="/networkzone/assets/gallery-img2-mob-d22a35e0.png "
+                  width="343"
+                  height="520" />
+                <img
+                  class="gallery-img"
+                  src="/networkzone/assets/gallery-img2-mob-d22a35e0.png"
+                  alt="Screenshot of the game"
+                  width="343"
+                  height="520"
+                  loading="lazy"
+              /></picture>
+            </li>
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/networkzone/assets/gallery-img3-desk-c0059a59.png "
+                  media="(min-width: 1440px)"
+                  width="304"
+                  height="522" />
+                <source
+                  srcset="/networkzone/assets/gallery-img3-mob-10a154c0.png "
+                  width="343"
+                  height="520" />
+                <img
+                  class="gallery-img"
+                  src="/networkzone/assets/gallery-img3-mob-10a154c0.png"
+                  alt="Screenshot of the game"
+                  width="343"
+                  height="520"
+                  loading="lazy"
+              /></picture>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section faq-section" id="faq">
+  <div class="faq-bg-wrapper">
+    <div class="container faq-container">
+      <div class="faq-content-wrapper">
+        <h2 class="section-title faq-title">FAQ</h2>
+        <p class="section-subtitle faq-subtitle">
+          Common questions about the experience and how the game unfolds.
+        </p>
+        <ul class="faq-list">
+          <li class="faq-list-item">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">Is Threadbound story-focused?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/networkzone/assets/sprite-ebf4c179.svg#icon-arrow-down"></use></svg
+              ></span>
+            </button>
+            <p class="faq-bottom-text">
+              Yeah, the story kind of builds itself as you play - it's not
+              scripted out.
+            </p>
+          </li>
+          <li class="faq-list-item">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">Are there traditional puzzles?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/networkzone/assets/sprite-ebf4c179.svg#icon-arrow-down"></use></svg
+              ></span>
+            </button>
+            <p class="faq-bottom-text">
+              It's more about feelings and how everything connects than solving
+              puzzles.
+            </p>
+          </li>
+          <li class="faq-list-item">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">Can choices be undone?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/networkzone/assets/sprite-ebf4c179.svg#icon-arrow-down"></use></svg
+              ></span>
+            </button>
+            <p class="faq-bottom-text">
+              Some changes are permanent, others evolve over time.
+            </p>
+          </li>
+          <li class="faq-list-item">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text"
+                >Is there pressure or time limits?</span
+              >
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/networkzone/assets/sprite-ebf4c179.svg#icon-arrow-down"></use></svg
+              ></span>
+            </button>
+            <p class="faq-bottom-text">
+              No. The experience is slow and reflective.
+            </p>
+          </li>
+          <li class="faq-list-item">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">Does the game guide the player?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/networkzone/assets/sprite-ebf4c179.svg#icon-arrow-down"></use></svg
+              ></span>
+            </button>
+            <p class="faq-bottom-text">
+              Light guidance exists, but discovery is encouraged.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <picture>
+      <source
+        srcset="/networkzone/assets/faq-line-desk-0e84344a.png "
+        media="(min-width: 1440px)"
+        width="1440"
+        height="46" />
+      <source srcset="/networkzone/assets/faq-line-mob-ff1297c1.png " width="375" height="46" />
+      <img
+        class="faq-line-img"
+        src="/networkzone/assets/faq-line-mob-ff1297c1.png"
+        alt="Line"
+        width="375"
+        height="46"
+    /></picture>
+  </div>
+</section>
+
+      <section class="section contact-section" id="contact">
+  <div class="contact-bg-wrapper">
+    <div class="container contact-container">
+      <div class="contact-content-wrapper">
+        <div class="section-title-wrapper contact-title-wrapper">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle contact-subtitle">Support and inquiries</p>
+        </div>
+        <a href="mailto:info@networkzone.site" class="contact-link">
+          <span>info@networkzone.site</span>
+          <svg class="contact-icon" width="24" height="24">
+            <use href="/networkzone/assets/sprite-ebf4c179.svg#icon-arrow"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <nav class="footer-nav">
+      <ul class="footer-list">
+        <li class="footer-list-item">
+          <a class="footer-link" href="./privacy-policy.html">Privacy Policy</a>
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-link" href="./terms-and-conditions.html"
+            >Terms and Conditions</a
+          >
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-link" href="./cookies-policy.html">Cookies Policy</a>
+        </li>
+      </ul>
+    </nav>
+    <p class="footer-text">© 2026 — All rights reserved. networkzone.site</p>
+  </div>
+</footer>
+
+    <section id="cookie-banner" class="cookie-banner-section">
+  <div class="cookie-banner-wrapper">
+    <p class="cookie-banner-text">
+      We use cookies to enhance your experience while using our website. By
+      continuing to use this site, you consent to our use of cookies.
+    </p>
+    <div class="cookie-banner-buttons">
+      <button class="cookie-accept-btn" id="cookie-accept">Accept</button>
+      <button class="cookie-decline-btn" id="cookie-decline">Reject</button>
+    </div>
+  </div>
+</section>
+
+
+    
+  </body>
+</html>
