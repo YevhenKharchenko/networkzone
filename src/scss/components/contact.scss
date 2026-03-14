@@ -1,4 +1,6 @@
 .contact-section {
+  background: #000;
+
   @include media(desktop) {
   }
 }
@@ -11,7 +13,7 @@
   margin-right: auto;
 
   @include media(desktop) {
-    padding-top: 80px;
+    padding-top: 104px;
     padding-bottom: 120px;
     max-width: 1440px;
   }
@@ -23,37 +25,25 @@
 }
 
 .contact-content-wrapper {
-  border: 1px solid #787566;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #eaeaea;
   border-radius: 40px;
-  padding: 88px 16px;
+  padding: 40px 16px;
   width: 100%;
-  background-image: url(../img/contact/contact-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @include media(desktop) {
-    padding: 67px 40px;
-    background-image: url(../img/contact/contact-bg-desk.png);
-  }
-}
-
-.contact-title-wrapper {
-  width: 100%;
-
-  @include media(desktop) {
-    max-width: 420px;
-    margin-bottom: 24px;
+    padding: 80px 40px;
   }
 }
 
 .contact-subtitle {
-  width: 100%;
+  margin-bottom: 16px;
 
   @include media(desktop) {
+    margin-bottom: 24px;
   }
 }
 
@@ -61,18 +51,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Cormorant Garamond', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.3;
-  letter-spacing: -0.02em;
+  gap: 4px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.12;
   text-transform: uppercase;
   text-align: center;
-  color: #f2f2f2;
+  color: #f31b26;
   word-break: break-all;
   max-width: max-content;
 
   @include media(desktop) {
-    font-size: 34px;
+    font-size: 28px;
+    gap: 8px;
+  }
+}
+
+.contact-icon {
+  min-width: 24px;
+
+  @include media(desktop) {
   }
 }

@@ -1,5 +1,5 @@
 .policy-section {
-  background: #000;
+  background: #034858;
   padding-top: 112px;
   padding-bottom: 60px;
 
@@ -10,49 +10,45 @@
 }
 
 .policy-main-title {
-  font-family: 'Cormorant Garamond', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.3;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.12;
   text-align: center;
-  color: #bba27a;
+  color: #eaeaea;
   margin-bottom: 40px;
 
   @include media(desktop) {
-    font-size: 42px;
+    font-size: 36px;
   }
 }
 
 .policy-title {
-  font-family: 'Cormorant Garamond', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.3;
-  letter-spacing: -0.02em;
-  color: #dbe4e1;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #eaeaea;
   margin-bottom: 16px;
 
   @include media(desktop) {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
 .policy-text {
-  font-family: 'Cormorant Garamond', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.3;
-  letter-spacing: -0.02em;
-  color: #dbe4e1;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #eaeaea;
 
   &:not(:last-child) {
     margin-bottom: 16px;
   }
 
   @include media(desktop) {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -62,12 +58,11 @@
 }
 
 .policy-item {
-  font-family: 'Cormorant Garamond', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.3;
-  letter-spacing: -0.02em;
-  color: #dbe4e1;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #eaeaea;
   margin-bottom: 8px;
 
   &:last-child {
@@ -75,15 +70,15 @@
   }
 
   @include media(desktop) {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
 .policy-span {
-  color: #4a77ff;
+  color: #a2b9ff;
 }
 
 .policy-link {
-  color: #4a77ff;
+  color: #a2b9ff;
   word-wrap: break-word;
 }

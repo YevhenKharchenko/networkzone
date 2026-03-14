@@ -1,0 +1,82 @@
+.about-section {
+  background: #000;
+
+  @include media(desktop) {
+  }
+}
+
+.about-bg-wrapper {
+  padding-top: 80px;
+  padding-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 375px;
+  background-image: url(../img/about/about-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include media(desktop) {
+    padding-top: 120px;
+    padding-bottom: 104px;
+    max-width: 1440px;
+    background-image: url(../img/about/about-bg-desk.jpg);
+  }
+}
+
+.about-container {
+  @include media(desktop) {
+  }
+}
+
+.about-content-wrapper {
+  @include media(desktop) {
+    max-width: 672px;
+  }
+}
+
+.about-logo-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.about-title {
+  @include media(desktop) {
+  }
+}
+
+.about-subtitle {
+  text-align: left;
+  color: #f31b26;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.about-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #d4d4d4;
+  max-width: 240px;
+  margin-left: auto;
+
+  @include media(desktop) {
+    font-size: 20px;
+    max-width: 448px;
+  }
+}
+
+.about-bottom-text {
+  margin-top: 24px;
+
+  @include media(desktop) {
+  }
+}

@@ -1,4 +1,6 @@
 .faq-section {
+  background: #034858;
+
   @include media(desktop) {
   }
 }
@@ -6,16 +8,19 @@
 .faq-bg-wrapper {
   padding-top: 64px;
   padding-bottom: 64px;
+  max-width: 375px;
   margin-left: auto;
   margin-right: auto;
   background-image: url(../img/faq/faq-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  position: relative;
 
   @include media(desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
+    max-width: 1440px;
     background-image: url(../img/faq/faq-bg-desk.jpg);
   }
 }
@@ -26,17 +31,24 @@
 }
 
 .faq-content-wrapper {
+  background: #0f1418;
+  border-radius: 40px;
+  padding: 40px 16px;
+
   @include media(desktop) {
-    max-width: 640px;
+    border-radius: 100px;
+    padding: 64px 0px;
+    max-width: 1088px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-.faq-title {
+.faq-subtitle {
   margin-bottom: 48px;
 
   @include media(desktop) {
+    max-width: 636px;
     margin-bottom: 64px;
   }
 }
@@ -51,13 +63,13 @@
 }
 
 .faq-list-item {
-  border-bottom: 1px solid #787566;
+  border-bottom: 1px solid #f31b26;
   padding: 20px 0px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   width: 100%;
-  max-width: 343px;
+  max-width: 311px;
   margin-left: auto;
   margin-right: auto;
   transition: all 0.3s ease-in-out;
@@ -77,16 +89,16 @@
 }
 
 .faq-btn-text {
-  font-family: 'Cormorant Garamond', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.3;
-  letter-spacing: -0.02em;
-  color: #bba27a;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #eaeaea;
   text-align: left;
+  transition: color 0.3s ease-in-out;
 
   @include media(desktop) {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -104,18 +116,20 @@
 }
 
 .faq-icon {
+  fill: #eaeaea;
+  transition: fill 0.3s ease-in-out;
+
   @include media(desktop) {
   }
 }
 
 .faq-bottom-text {
-  font-family: 'Cormorant Garamond', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.3;
-  letter-spacing: -0.02em;
-  color: #d1d1d1;
-  max-width: 319px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #d4d4d4;
+  max-width: 287px;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
@@ -137,11 +151,26 @@
 }
 
 .faq-list-item.faq-open .faq-toggle-symbol {
-  transform: rotate(180deg);
+  transform: rotate(-90deg);
 }
 
 .faq-list-item.faq-open {
 }
 
 .faq-list-item.faq-open .faq-btn-text {
+  color: #f31b26;
+}
+
+.faq-list-item.faq-open .faq-icon {
+  fill: #ff3503;
+}
+
+.faq-line-img {
+  position: absolute;
+  top: -15px;
+  left: 0;
+
+  @include media(desktop) {
+    top: -13px;
+  }
 }
